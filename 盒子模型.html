@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>盒子模型</title>
+        <style type="text/css">
+                .box1,.box2{
+                        width: 100px;
+                        height: 100px;
+                        background: red;
+                        float: left;
+                        margin-left: 100px;
+                        margin-right: 100px;
+                        /* padding与margin的取值一个：上下左右
+                        取值两个：上下，左右
+                        取值三个：上，左右，下*
+                        取值四个：上，右，下，左（顺时针）*/
+                        padding: 100px 200px 100px;
+                        /* padding-left：左内边距
+                        padding-right：右内边距
+                        padding-top：上内边距
+                        padding-bottom：下内边距*/
+                        /*margin-left   margin-right    margin-top   margin-bottom*/
+                        /* border：代表四条边同时设置
+                        参数一：边框宽度
+                        参数二：边框样式
+                        参数三：边框颜色*/
+                        border: 10px solid aqua;
+                        /* 去掉底边框 */
+                        /*border-bottom: none;*/
+                        /*border-top: 10px solid aqua;*/
+                        /*border-left: 10px solid aqua;*/
+                        /* 颜色：1、合法的英文单词
+                        2、#000000 十六进制六位表示，取值范围[0,f]
+                        前两位代表red 中间两位代表green 最后两位代表蓝色
+                        当两位都是相同的时候，我们可以缩写，比如：#336699 --> #369
+                        3、rgb(,,) 使用十进制表示，取值范围[0,255] ，例如rgb(255,255,255)*
+                        4、rgba(,,,)使用十进制表示，前面三位与rgb(,,)相同，最后一位代表透明度，0为全透明 1为不透明 rgba(50,50,50,0.6/.6) */
+                        /* 边框圆角，取值可以为像素，也可以是百分比 ，当取值为50%或者100%的时候，它会呈现出一个圆*/
+                        /*border-radius: 50%;*/
+                }
+        </style>
+</head>
+<body>
+        拓展：如何计算盒子所占宽度？
+        盒子实际占用宽度 = width + padding-left + padding-right + border-left + border-right + margin-left + margin-right
+        <div class="box1">
+                1111
+        </div>
+        <div class="box2">
+        
+        </div>
+</body>
+</html>

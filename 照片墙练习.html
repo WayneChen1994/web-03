@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>照片墙练习</title>
+        <style type="text/css">
+                body{
+                        background: lightslategray;
+                }
+                .box1,.box2{
+                        width: 1160px;
+                        height: 290px;
+                }
+                .box1 img,.box2 img{
+                        background: whitesmoke;
+                        display: block;
+                        width: 200px;
+                        height: 200px;
+                        border: none;
+                        padding: 10px;
+                        margin: 10px;
+                        float: left;
+                        /* 补间动画、过渡动画*/
+                        transition: all 0.5s;
+                        /* 参数一：水平阴影的位置【必须写】
+                        参数二：垂直阴影的位置【必须写】
+                        参数三：高斯模糊的距离【默认为0】
+                        参数四：阴影的宽度【默认为0】
+                        参数五：阴影的颜色以及透明度【默认黑色不透明】
+                        参数六：阴影的样式【默认外阴影】*/
+                        border-shadow: 8px 8px 8px rgba(50,50,50,0.6)
+                }
+                img:hover{
+                        width: 250px;
+                        height: 250px;
+                }
+        </style>
+</head>
+<body>
+        <div class="box1">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.png" alt="">
+        </div>
+        <div class="box2">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpeg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+        </div>
+</body>
+</html>
